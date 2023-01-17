@@ -23,6 +23,7 @@ public class GameConsole
     {
         var cell = _board.Cells[cellIndex];
         
-        return cell.CheckEmpty() ? ' ' : cell.CheckPlayer1() ? 'X' : 'O';
+        return cell.CheckEmpty() ? ' ' :
+               cell.CheckPlayer1() ? 'X' : 'O';
     }
 }
