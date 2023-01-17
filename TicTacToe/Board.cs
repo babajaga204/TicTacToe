@@ -1,5 +1,4 @@
-﻿
-namespace TicTacToe;
+﻿namespace TicTacToe;
 
 public class Board
 {
@@ -26,7 +25,6 @@ public class Board
 
         if (!Cells[index].CheckEmpty())
         {
-            // Console.WriteLine("Velg en tom rute!");
             return false;
         }
         Cells[index].SetValue(true);
