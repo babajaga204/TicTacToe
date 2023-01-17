@@ -1,6 +1,4 @@
-﻿using System.Data.SqlTypes;
-
-namespace TicTacToe;
+﻿namespace TicTacToe;
 
 public class GameConsole
 {

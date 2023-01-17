@@ -1,7 +1,4 @@
 ﻿
-
-using System.ComponentModel.Design;
-using System.Data.Common;
 using TicTacToe;
 
 var board = new Board();
@@ -16,7 +13,9 @@ while (gameConsole.IsGameRunning)
         gameConsole.IsGameRunning = false;
         string winner = board.CheckWin(1) ? "Du" : "CPU-en";
         Console.WriteLine($@" {winner} vant!
-Vil du starte på nytt? y - for ja, n - for nei");
+        Vil du starte på nytt? 
+        y - for ja,
+        n - for nei");
         var restart = Console.ReadLine()!.ToLower();
         if (board.CheckRestart(restart)) gameConsole.IsGameRunning = true;
         if (restart == "n") break;
