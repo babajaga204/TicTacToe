@@ -1,8 +1,11 @@
-﻿namespace TicTacToe;
+﻿using System.Data.SqlTypes;
+
+namespace TicTacToe;
 
 public class GameConsole
 {
     public Board _board;
+    public bool IsGameRunning = true;
 
     public GameConsole(Board board)
     {

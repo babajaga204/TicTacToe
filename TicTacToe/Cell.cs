@@ -19,4 +19,9 @@ public class Cell
         if (!CheckEmpty()) return;
         IsTaken = player ? 1 : 2;
     }
+
+    public void ClearValue()
+    {
+        IsTaken = 0;
+    }
 }
